@@ -1,0 +1,28 @@
+git config --global user.name"Your Name"
+git config --global user.email"email@example.com"
+# --global 参数 该电脑 git 仓库都会使用这个配置
+
+mkdir learngit   # 创建空目录
+cd learngit      # 查看空目录
+pwd              # 用于显示当前目录的位置
+git init         # 把这个命令变成Git可以管理的仓库
+                  # 使用Notepad++ 编辑txt文件放在learngit目录下
+git add readme.txt # 把文件添加到仓库
+git commit -m"wrote a readme file"   # 把文件提交到仓库  （1 file change :一个文件被改动，2 insertions:插入两行内容）
+# 使用Notepad++ 修改放在learngit目录下readme.txt文件保存
+git status   # 查看仓库当前的状态
+git diff readme.txt   # 查看仓库当前做了什么修改
+git add readme.txt  # 提交修改的新文件
+git  status   # 查看当前仓库的状态
+git log    # 查看日志
+git log --pretty=oneline  
+git reset --hard HEAD^   # 回退到上一个版本
+git log  # 查看仓库当前版本库的状态
+git reset --hard 1094a (commit id)   # 回到未来的某个版本
+cat readme.txt  # 查看文件内容
+git reflog  # 查看命令历史
+
+git checkout --readme.txt   # 撤销修改
+git reset HEAD readme.txt   # 把暂存区的修改撤销
+
+rm test.txt     # 删除文件
